@@ -38,6 +38,8 @@ if (CUDAToolkit_FOUND)
             endif()
         endif()
     endif()
+
+    set(CMAKE_CUDA_ARCHITECTURES "37;50;60;61;70;75;80;86")
     message(STATUS "Using CUDA architectures: ${CMAKE_CUDA_ARCHITECTURES}")
 
     enable_language(CUDA)
